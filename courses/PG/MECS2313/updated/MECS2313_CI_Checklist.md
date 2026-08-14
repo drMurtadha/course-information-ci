@@ -16,7 +16,7 @@ Semakan akhir (Langkah 7) sebelum pemuktamadan CI. Rujuk `MECS2313_Advanced_Comp
 | 10 | Assessment components consistent with assessment methods in CLO mapping | ✅ | Selaras — lihat jadual Assessment. |
 | 11 | Summative assessment weightage at least 40% for PG | ✅ | Final Examination = 40%. |
 | 12 | References include at least one source published 2023–2026 | ✅ | Ditambah: Chattopadhyay, A. (Ed.). (2025). *Handbook of Computer Architecture*. Springer Singapore. |
-| 13 | Approval section signed and dated — 30 August 2026 | ⚠️ | Tarikh ditetapkan 30-Aug-2026; tandatangan tulisan tangan masih perlu ditambah secara manual sebelum diserahkan. Nama penyedia CI juga belum diisi dalam dokumen asal. |
+| 13 | Approval section signed and dated — 30 August 2026 | ⚠️ | Tarikh ditetapkan 30-Aug-2026; tandatangan tulisan tangan masih perlu ditambah secara manual sebelum diserahkan. Nama "Prepared by" diisi Ts. A.P. Dr. Mohd Murtadha bin Mohamad. |
 | 14 | If any, VBE applies to CLO #? — VBE Criteria | ⚠️ N/A | **Tiada pemetaan VBE rasmi.** Kursus ini tiada dalam `MECS5_Matrix_Kursus_UTM_VBE_ESD.xlsx` (program MECS ODL), dan fail matrix untuk program `MECS2` (Master of Computer Science bukan-ODL) belum wujud di Google Drive walaupun status "Current" dalam indeks. Disyorkan PM Ts Dr Rohayanti Hassan diminta lengkapkan matrix MECS2 dahulu sebelum nilai VBE dipetakan pada kursus ini. |
 | 15 | If any, ESD applies to CLO #? — ESD Criteria | ⚠️ N/A | Sebab sama seperti #14 — tiada pemetaan ESD rasmi tersedia buat masa ini. |
 
@@ -30,3 +30,4 @@ Semakan akhir (Langkah 7) sebelum pemuktamadan CI. Rujuk `MECS2313_Advanced_Comp
 6. **Rujukan ditambah 1 sumber 2025** (Chattopadhyay, *Handbook of Computer Architecture*, Springer) untuk memenuhi keperluan sumber terkini 2023–2026; rujukan asal (Hennessy & Patterson, 2019) dikekalkan sebagai teks utama.
 7. **VBE/ESD tidak diterapkan** — atas arahan pengguna (14 Ogos 2026), memandangkan tiada pemetaan rasmi wujud dalam matrix kursus program MECS2/MECS5. Tindakan susulan disyorkan: lengkapkan `MECS2_Matrix_Kursus_UTM_VBE_ESD.xlsx` di Drive.
 8. **Jadual mingguan (Week 1–15) dan SLT dikekalkan sepenuhnya** daripada CI asal kerana kandungan sudah tepat dan jumlah F2F (42h) sudah patuh piawaian.
+9. **Course lecturer(s) dikemas kini kepada Ts. A.P. Dr. Mohd Murtadha bin Mohamad** (D07, murtadha@utm.my) — mengikut arahan pengguna (14 Ogos 2026). CI 2024/25 (B1 CI) tersenarai A.P. Dr. Mohd Shahizan Othman; CI 2020/21 (fail "edited") tersenarai Dr. Murtadha sebagai penyedia asal kursus. "Prepared by" turut diisi nama Dr. Murtadha.
