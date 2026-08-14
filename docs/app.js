@@ -74,3 +74,33 @@ document.querySelector('#reset-checklist').addEventListener('click', () => {
   updateChecklist();
 });
 updateChecklist();
+
+const ciTabs = [...document.querySelectorAll('.ci-tab')];
+const ciDocuments = [...document.querySelectorAll('.ci-document')];
+
+function showCi(courseId) {
+  ciTabs.forEach((tab) => {
+    const selected = tab.dataset.ci === courseId;
+    tab.classList.toggle('active', selected);
+    tab.setAttribute('aria-selected', String(selected));
+    tab.tabIndex = selected ? 0 : -1;
+  });
+  ciDocuments.forEach((documentPanel) => {
+    const selected = documentPanel.id === `ci-${courseId}`;
+    documentPanel.hidden = !selected;
+    documentPanel.classList.toggle('active', selected);
+  });
+}
+
+ciTabs.forEach((tab, index) => {
+  tab.addEventListener('click', () => showCi(tab.dataset.ci));
+  tab.addEventListener('keydown', (event) => {
+    if (!['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
+    event.preventDefault();
+    const direction = event.key === 'ArrowRight' ? 1 : -1;
+    const nextTab = ciTabs[(index + direction + ciTabs.length) % ciTabs.length];
+    showCi(nextTab.dataset.ci);
+    nextTab.focus();
+  });
+});
+showCi('mecs2313');
