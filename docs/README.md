@@ -1,10 +1,11 @@
-# docs/ — Ruang Kerja Web (Codex)
+# Portal Course Information
 
-Folder ini disediakan khas untuk kod laman web (dibina oleh Codex atau agent web lain). Ia sengaja dikosongkan buat masa ini.
+Kod laman web statik untuk portal Course Information Fakulti Komputeran, UTM.
 
-Sebelum mula, baca `../CODEX_INSTRUCTIONS.md` di root repo untuk peraturan penuh — terutamanya folder mana yang **tidak boleh** diubah (kandungan CI diselenggara oleh Claude secara berasingan).
+Laman ini direka untuk diterbitkan melalui GitHub Pages menggunakan folder `docs/` dan membaca fail sumber kursus melalui pautan relatif tanpa mengubah kandungan asal.
 
-Ringkasan pantas:
-- Letak semua kod web di sini (`docs/`)
-- Baca kandungan dari `templates/`, `guides/`, `references/`, `courses/` — jangan tulis/edit ke folder tersebut
-- Kalau guna GitHub Pages, set Settings → Pages → source ke `docs/`
+Fail utama:
+
+- `index.html` — struktur dan kandungan portal
+- `styles.css` — reka bentuk responsif
+- `app.js` — carian kursus, navigasi dan checklist interaktif
