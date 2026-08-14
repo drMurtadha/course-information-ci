@@ -104,3 +104,7 @@ ciTabs.forEach((tab, index) => {
   });
 });
 showCi('mecs2313');
+
+document.querySelectorAll('[data-open-ci]').forEach((link) => {
+  link.addEventListener('click', () => showCi(link.dataset.openCi));
+});
