@@ -1,3 +1,22 @@
+const logoVariant = new URLSearchParams(window.location.search).get('logo');
+const logoSources = {
+  mono: {
+    utm: 'assets/branding/logo-utm/logo-utm.png',
+    ascend: 'assets/branding/ascend-2030/single-logo/utm-ascend-2030-black.png'
+  },
+  reverse: {
+    utm: 'assets/branding/logo-utm/logo-utm-reverse.png',
+    ascend: 'assets/branding/ascend-2030/single-logo/utm-ascend-2030-white.png'
+  }
+};
+
+if (logoSources[logoVariant]) {
+  document.documentElement.dataset.logoVariant = logoVariant;
+  document.querySelectorAll('[data-logo]').forEach((image) => {
+    image.src = logoSources[logoVariant][image.dataset.logo];
+  });
+}
+
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#main-nav');
 

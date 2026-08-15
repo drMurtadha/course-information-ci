@@ -258,6 +258,18 @@ footer { background:#f3f6ff; border-color:#dfe4ef; }
 .footer-brand img { display:block; object-fit:contain; }
 .footer-utm-logo { width:150px; height:51px; }
 .footer-ascend-logo { width:58px; height:54px; }
+[data-logo-variant="mono"] [data-logo="utm"] { filter:grayscale(1) brightness(.12) contrast(1.35); }
+[data-logo-variant="mono"] .brand-divider { background:#c9cdd5; }
+[data-logo-variant="reverse"] .site-header { background:rgba(15,24,50,.94); border-color:rgba(255,255,255,.16); }
+[data-logo-variant="reverse"] .site-header nav a { color:#eef2ff; }
+[data-logo-variant="reverse"] .site-header nav a:hover,
+[data-logo-variant="reverse"] .site-header nav a.active { color:#fff; background:rgba(255,255,255,.13); }
+[data-logo-variant="reverse"] .site-header .brand-divider { background:rgba(255,255,255,.25); }
+[data-logo-variant="reverse"] .menu-toggle { color:#fff; background:rgba(255,255,255,.12); }
+[data-logo-variant="reverse"] footer { color:#fff; background:#101832; }
+[data-logo-variant="reverse"] footer p,
+[data-logo-variant="reverse"] footer a { color:#cbd2e6; }
+[data-logo-variant="reverse"] footer .brand-divider { background:rgba(255,255,255,.25); }
 
 @media(max-width:760px){.site-header{width:calc(100% - 28px);margin:8px 14px 0;padding:0 14px;top:8px}.hero{margin-top:-74px;padding-top:74px}.alignment-visual{width:175px;height:175px;right:-50px;bottom:22%;opacity:.42}h1{font-size:clamp(48px,14vw,72px)}}
 @media(max-width:760px){
