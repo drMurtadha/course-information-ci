@@ -1,5 +1,10 @@
-const logoVariant = new URLSearchParams(window.location.search).get('logo');
+const requestedLogoVariant = new URLSearchParams(window.location.search).get('logo');
+const logoVariant = ['color', 'mono', 'reverse'].includes(requestedLogoVariant) ? requestedLogoVariant : 'reverse';
 const logoSources = {
+  color: {
+    utm: 'assets/branding/logo-utm/logo-utm.png',
+    ascend: 'assets/branding/ascend-2030/single-logo/utm-ascend-2030-full-colour.png'
+  },
   mono: {
     utm: 'assets/branding/logo-utm/logo-utm.png',
     ascend: 'assets/branding/ascend-2030/single-logo/utm-ascend-2030-black.png'
@@ -10,12 +15,10 @@ const logoSources = {
   }
 };
 
-if (logoSources[logoVariant]) {
-  document.documentElement.dataset.logoVariant = logoVariant;
-  document.querySelectorAll('[data-logo]').forEach((image) => {
-    image.src = logoSources[logoVariant][image.dataset.logo];
-  });
-}
+document.documentElement.dataset.logoVariant = logoVariant;
+document.querySelectorAll('[data-logo]').forEach((image) => {
+  image.src = logoSources[logoVariant][image.dataset.logo];
+});
 
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#main-nav');
